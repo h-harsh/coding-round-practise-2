@@ -9,12 +9,12 @@ function App() {
   return (
     <div className="App">
       <nav style={{display:'flex', justifyContent:'space-evenly', alignItems:'center'}}>
-        <Link to="/products" > <h2>Products</h2></Link>
+        <Link to="/" > <h2>Products</h2></Link>
         <Link to="/cart" > <h2>Cart</h2></Link>
         
       </nav>
       <Routes>
-        <Route path="/products" element={<ProductsPage/>} />
+        <Route path="/" element={<ProductsPage/>} />
         <Route path="/cart" element={<CartPage/>} />
       </Routes>
     </div>
